@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  messaging-telegram:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "2673:80" # Port mapping if needed
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production

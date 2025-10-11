@@ -1,2 +1,2 @@
 # BotticelliBundle
-A basic Botticelli Docker image
+A basic Botticelli Docker image with a sample Bot
