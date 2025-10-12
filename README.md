@@ -7,7 +7,7 @@ containerized environment.
 ## How to
 In order to deploy your bot, you should clone this repository, modify a Dockerfile and appsettings.json loike this:
 
-```
+``` Dockerfile
 # Use .NET SDK 8 image for building
 FROM mcr.microsoft.com/dotnet/sdk:8.0-alpine AS build
 
@@ -39,7 +39,7 @@ COPY appsettings.json .
 ENTRYPOINT ["dotnet", "<YourBot>.dll"]
 ```
 
-```json
+``` json
 {
   "Logging": {
     "LogLevel": {
